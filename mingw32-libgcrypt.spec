@@ -8,7 +8,7 @@
 
 Name:           mingw32-libgcrypt
 Version:        1.4.4
-Release:        4%{?dist}.4
+Release:        4%{?dist}.5
 Summary:        MinGW Windows gcrypt encryption library
 
 
@@ -105,6 +105,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Tue Dec 28 2010 Andrew Beekhof <abeekhof@redhat.com> - 1.4.4-4.4
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
